@@ -1,50 +1,22 @@
-/* ============================================================
-   SCROLL REVEAL
-   ============================================================ */
-(function () {
-  const targets = document.querySelectorAll(
-    '.section__header, .feature-card, .skill-list li, .cond-card, .apply-item, .apply__cta-box, .skills__col, .about__card'
-  );
+// Scroll reveal
+const els = document.querySelectorAll(
+  '.feat-card, .cond__item, .apply__step, .apply__panel, .skills__box, .section__head'
+);
+els.forEach(el => el.classList.add('js-reveal'));
 
-  targets.forEach((el) => el.classList.add('reveal'));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -32px 0px' }
-  );
-
-  targets.forEach((el, i) => {
-    el.style.transitionDelay = (i % 8) * 60 + 'ms';
-    observer.observe(el);
-  });
-})();
-
-/* ============================================================
-   NAV SCROLL SHADOW
-   ============================================================ */
-(function () {
-  const nav = document.querySelector('.nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-    } else {
-      nav.style.boxShadow = 'none';
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      io.unobserve(e.target);
     }
-  }, { passive: true });
-})();
-
-/* ============================================================
-   FEATURE CARD STAGGER
-   ============================================================ */
-(function () {
-  document.querySelectorAll('.feature-card').forEach((el, i) => {
-    el.style.transitionDelay = i * 50 + 'ms';
   });
-})();
+}, { threshold: 0.1 });
+
+els.forEach(el => io.observe(el));
+
+// Nav shadow on scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav.style.boxShadow = window.scrollY > 30 ? '0 2px 16px rgba(0,0,0,0.08)' : 'none';
+}, { passive: true });

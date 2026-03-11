@@ -11,263 +11,231 @@
 </head>
 <body>
 
-  <!-- ========== NAV ========== -->
+  <!-- NAV -->
   <nav class="nav">
     <div class="nav__logo">
-      <span class="nav__ball">⚽</span>
-      <span class="nav__name">SOCCER <span class="accent">× AI</span></span>
+      <span>⚽</span>
+      <span>SOCCER <span class="accent">× AI</span></span>
     </div>
     <a href="#apply" class="btn btn--nav">応募する</a>
   </nav>
 
-  <!-- ========== HERO ========== -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero__deco">
-      <div class="deco-circle deco-circle--1"></div>
-      <div class="deco-circle deco-circle--2"></div>
-      <div class="deco-line deco-line--1"></div>
-      <div class="deco-line deco-line--2"></div>
+    <div class="hero__bg">
+      <div class="hbg-circle hbg-circle--1"></div>
+      <div class="hbg-circle hbg-circle--2"></div>
     </div>
     <div class="container">
       <div class="hero__inner">
-        <div class="hero__content">
-          <p class="hero__eyebrow">AIエンジニア 募集</p>
-          <h1 class="hero__title">
-            スポーツの未来を、<br />
-            <span class="hero__title-em">AIで創る。</span>
+        <div class="hero__text">
+          <p class="hero__kicker">AI × SPORTS PLATFORM</p>
+          <h1 class="hero__h1">
+            スポーツを、<br />
+            <em>データとAIで</em><br />
+            もっと面白く。
           </h1>
-          <p class="hero__lead">
-            サッカー・フットサル領域のシステム開発プロジェクト。<br />
-            AI を武器にした高速開発ができるエンジニアを募集します。
+          <p class="hero__sub">
+            サッカー・フットサル領域のプラットフォームを一緒に作るエンジニアを募集しています。
           </p>
-          <div class="hero__cta">
-            <a href="#apply" class="btn btn--primary">今すぐ応募する</a>
-            <a href="#features" class="btn btn--ghost">開発内容を見る</a>
+          <div class="hero__actions">
+            <a href="#apply" class="btn btn--primary">応募する</a>
+            <a href="#features" class="btn btn--outline">開発内容を見る</a>
           </div>
         </div>
-        <div class="hero__visual">
-          <div class="hero__ball-wrap">
-            <div class="hero__ball">⚽</div>
-            <div class="hero__ring hero__ring--1"></div>
-            <div class="hero__ring hero__ring--2"></div>
-            <div class="hero__ring hero__ring--3"></div>
+        <div class="hero__graphic">
+          <div class="graphic__card graphic__card--a">
+            <span class="gc-icon">📊</span>
+            <span class="gc-label">選手スコア分析</span>
+            <div class="gc-bar"><div class="gc-bar__fill" style="width:82%"></div></div>
+            <div class="gc-bar"><div class="gc-bar__fill" style="width:67%"></div></div>
+            <div class="gc-bar"><div class="gc-bar__fill" style="width:91%"></div></div>
           </div>
-          <div class="hero__tags">
-            <span class="htag htag--1">Claude Code</span>
-            <span class="htag htag--2">Cursor</span>
-            <span class="htag htag--3">ChatGPT</span>
-            <span class="htag htag--4">AI駆動開発</span>
+          <div class="graphic__card graphic__card--b">
+            <span class="gc-icon">🏆</span>
+            <span class="gc-label">ランキング</span>
+            <div class="gc-rank"><span class="gc-rank__num">1</span><span>田中 健太</span><span class="gc-score">98pt</span></div>
+            <div class="gc-rank"><span class="gc-rank__num">2</span><span>鈴木 颯</span><span class="gc-score">94pt</span></div>
+            <div class="gc-rank"><span class="gc-rank__num">3</span><span>佐藤 蓮</span><span class="gc-score">91pt</span></div>
+          </div>
+          <div class="graphic__card graphic__card--c">
+            <span class="gc-icon">⚽</span>
+            <span class="gc-label">チーム管理</span>
+            <div class="gc-members">
+              <div class="gc-avatar">T</div>
+              <div class="gc-avatar">S</div>
+              <div class="gc-avatar">K</div>
+              <div class="gc-avatar gc-avatar--more">+8</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FEATURES ========== -->
+  <!-- FEATURES -->
   <section class="section" id="features">
     <div class="container">
-      <div class="section__header">
-        <p class="section__tag">DEVELOPMENT</p>
-        <h2 class="section__title">実装希望機能</h2>
-        <p class="section__sub">全 8 機能を難易度・工数で分類しています。</p>
+      <div class="section__head">
+        <p class="section__tag">FEATURES</p>
+        <h2 class="section__title">開発する機能</h2>
       </div>
-
-      <!-- TIER 1: すぐ実装できる -->
-      <div class="tier">
-        <div class="tier__head">
-          <span class="tier__badge tier__badge--easy">すぐ実装できる</span>
-          <p class="tier__desc">CRUD・UI 中心。スタート時点で固められる基盤機能</p>
+      <div class="feat__grid">
+        <div class="feat-card">
+          <div class="feat-card__top">
+            <span class="feat-icon">👤</span>
+            <span class="feat-num">01</span>
+          </div>
+          <h3>個人選手データ管理</h3>
+          <p>選手のプロフィール・パフォーマンス履歴を一元管理。データをベースに成長を可視化します。</p>
         </div>
-        <div class="tier__grid">
-          <div class="feature-card feature-card--easy">
-            <div class="feature-card__icon">👤</div>
-            <h3>個人選手データ管理</h3>
-            <p>選手プロフィール・パフォーマンス履歴の登録・編集・閲覧</p>
+        <div class="feat-card">
+          <div class="feat-card__top">
+            <span class="feat-icon">📊</span>
+            <span class="feat-num">02</span>
           </div>
-          <div class="feature-card feature-card--easy">
-            <div class="feature-card__icon">🏆</div>
-            <h3>チーム管理</h3>
-            <p>チーム編成・メンバー管理・スケジュール登録</p>
-          </div>
-          <div class="feature-card feature-card--easy">
-            <div class="feature-card__icon">🥇</div>
-            <h3>ランキングシステム</h3>
-            <p>スコアベースの個人・チームランキング表示と実績管理</p>
-          </div>
+          <h3>個人スコアリング</h3>
+          <p>AI 解析による選手評価スコアの自動算出。強み・課題をひと目で確認できるダッシュボード。</p>
         </div>
-      </div>
-
-      <!-- TIER 2: 時間がかかる -->
-      <div class="tier">
-        <div class="tier__head">
-          <span class="tier__badge tier__badge--mid">時間がかかる</span>
-          <p class="tier__desc">外部連携・アルゴリズム設計が必要。しっかり作り込む機能</p>
+        <div class="feat-card">
+          <div class="feat-card__top">
+            <span class="feat-icon">🏆</span>
+            <span class="feat-num">03</span>
+          </div>
+          <h3>チーム管理</h3>
+          <p>チーム編成・メンバー管理・スケジュールを一か所で。監督・コーチの業務を効率化します。</p>
         </div>
-        <div class="tier__grid">
-          <div class="feature-card feature-card--mid">
-            <div class="feature-card__icon">📊</div>
-            <h3>個人スコアリング</h3>
-            <p>評価項目の設計・算出ロジック・スコアの可視化ダッシュボード</p>
+        <div class="feat-card">
+          <div class="feat-card__top">
+            <span class="feat-icon">🥇</span>
+            <span class="feat-num">04</span>
           </div>
-          <div class="feature-card feature-card--mid">
-            <div class="feature-card__icon">💳</div>
-            <h3>決済機能</h3>
-            <p>Stripe 等を使った会費・参加費のオンライン決済フロー</p>
-          </div>
-          <div class="feature-card feature-card--mid">
-            <div class="feature-card__icon">🤝</div>
-            <h3>マッチング機能</h3>
-            <p>スキル・地域・スタイルで最適な相手を提案するマッチングロジック</p>
-          </div>
+          <h3>ランキングシステム</h3>
+          <p>個人・チーム双方のリアルタイムランキング。実績バッジで選手のモチベーションを高めます。</p>
         </div>
       </div>
-
-      <!-- TIER 3: 工数大 -->
-      <div class="tier">
-        <div class="tier__head">
-          <span class="tier__badge tier__badge--hard">工数が大きい</span>
-          <p class="tier__desc">AI 連携・設計コストが高く、フェーズ 2 以降が現実的</p>
-        </div>
-        <div class="tier__grid tier__grid--2">
-          <div class="feature-card feature-card--hard">
-            <div class="feature-card__icon">🤖</div>
-            <h3>AI 分析機能</h3>
-            <p>プレイデータのパイプライン構築 → AI 解析 → 個別コーチングレポート自動生成まで一貫した設計が必要</p>
-          </div>
-          <div class="feature-card feature-card--hard">
-            <div class="feature-card__icon">🔗</div>
-            <h3>外部 API 連携</h3>
-            <p>デバイス・外部サービスとのデータ連携。認証設計・ドキュメント整備・バージョン管理まで含めると工数が大きい</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ========== SKILLS ========== -->
+  <!-- SKILLS -->
   <section class="section section--gray" id="skills">
     <div class="container">
-      <div class="section__header">
+      <div class="section__head">
         <p class="section__tag">SKILLS</p>
         <h2 class="section__title">求めるスキル</h2>
       </div>
-      <div class="skills__wrap">
-        <div class="skills__col">
-          <div class="skills__label"><span class="dot dot--green"></span>いずれかの経験</div>
-          <ul class="skill-list">
+      <div class="skills__cols">
+        <div class="skills__box">
+          <p class="skills__box-label">いずれかの経験</p>
+          <ul>
             <li>AI を活用したシステム開発</li>
             <li>Claude Code / ChatGPT / Cursor 等を使った開発</li>
             <li>フルスタック開発</li>
             <li>Web アプリ開発</li>
-            <li>API 設計</li>
-            <li>データベース設計</li>
+            <li>API 設計 / データベース設計</li>
           </ul>
         </div>
-        <div class="skills__col">
-          <div class="skills__label"><span class="dot dot--blue"></span>歓迎スキル</div>
-          <ul class="skill-list skill-list--welcome">
+        <div class="skills__box">
+          <p class="skills__box-label">歓迎スキル</p>
+          <ul class="ul--plus">
             <li>AI 駆動開発</li>
             <li>MVP 開発経験</li>
             <li>スポーツ系サービス開発</li>
           </ul>
-          <div class="tools__block">
-            <div class="skills__label" style="margin-top: 2rem;"><span class="dot dot--purple"></span>使用 AI ツール例</div>
-            <div class="tool-tags">
-              <span>Claude Code</span>
-              <span>ChatGPT</span>
-              <span>Cursor</span>
-              <span>GitHub Copilot</span>
-              <span>Gemini</span>
-              <span>v0</span>
-            </div>
+          <p class="skills__box-label" style="margin-top:28px;">使用 AI ツール</p>
+          <div class="tool-chips">
+            <span>Claude Code</span><span>ChatGPT</span><span>Cursor</span>
+            <span>GitHub Copilot</span><span>Gemini</span><span>v0</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== CONDITIONS ========== -->
+  <!-- CONDITIONS -->
   <section class="section" id="conditions">
     <div class="container">
-      <div class="section__header">
+      <div class="section__head">
         <p class="section__tag">CONDITIONS</p>
-        <h2 class="section__title">重要な応募条件</h2>
-        <p class="section__sub">以下に賛同できる方のみご応募ください。</p>
+        <h2 class="section__title">応募条件</h2>
       </div>
-      <div class="cond__grid">
-        <div class="cond-card">
-          <div class="cond-card__icon">🤖</div>
-          <h3>AI を中心とした開発思想</h3>
-          <p>従来型の開発ではなく、AI を設計・開発の軸に置いたスタイルで仕事ができる方</p>
+      <div class="cond__list">
+        <div class="cond__item">
+          <div class="cond__icon">🤖</div>
+          <div>
+            <h3>AI を中心とした開発スタイル</h3>
+            <p>AI を設計・実装の中心に置いた開発ができる方。ツールを使いこなして高速に動ける方を歓迎します。</p>
+          </div>
         </div>
-        <div class="cond-card">
-          <div class="cond-card__icon">💬</div>
-          <h3>事前ミーティングが可能</h3>
-          <p>プロジェクト開始前に要件確認ミーティングへ参加できる方<br /><small>※ミーティング不可の方はご遠慮ください</small></p>
+        <div class="cond__item">
+          <div class="cond__icon">💬</div>
+          <div>
+            <h3>事前ミーティングへの参加</h3>
+            <p>プロジェクト開始前に要件確認のミーティングへ参加いただける方。<br /><small>※参加が難しい方はご遠慮ください</small></p>
+          </div>
         </div>
-        <div class="cond-card">
-          <div class="cond-card__icon">🇯🇵</div>
-          <h3>日本人の方限定</h3>
-          <p>日本語でのコミュニケーションが必須です。スポーツ領域への関心があれば尚可</p>
+        <div class="cond__item">
+          <div class="cond__icon">🇯🇵</div>
+          <div>
+            <h3>日本語でのコミュニケーション</h3>
+            <p>日本語でのやりとりが必須です。スポーツ・サッカーへの関心があれば尚可。</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== APPLY ========== -->
+  <!-- APPLY -->
   <section class="section section--gray" id="apply">
     <div class="container">
-      <div class="section__header">
+      <div class="section__head">
         <p class="section__tag">APPLY</p>
         <h2 class="section__title">応募時に教えてください</h2>
       </div>
-      <div class="apply__layout">
-        <div class="apply__list">
-          <div class="apply-item">
-            <span class="apply-item__num">01</span>
+      <div class="apply__wrap">
+        <div class="apply__steps">
+          <div class="apply__step">
+            <span class="step-num">01</span>
             <div>
-              <h4>使用できる AI 開発ツール</h4>
-              <p>Claude Code, Cursor, ChatGPT など実際に使いこなしているツール</p>
+              <h4>使用できる AI ツール</h4>
+              <p>Claude Code, Cursor, ChatGPT など実際に使っているもの</p>
             </div>
           </div>
-          <div class="apply-item">
-            <span class="apply-item__num">02</span>
+          <div class="apply__step">
+            <span class="step-num">02</span>
             <div>
               <h4>AI を使った開発実績</h4>
-              <p>これまでに AI を活用して開発したプロダクトやシステムの実績</p>
+              <p>AI を活用して作ったプロダクトやシステムの概要</p>
             </div>
           </div>
-          <div class="apply-item">
-            <span class="apply-item__num">03</span>
+          <div class="apply__step">
+            <span class="step-num">03</span>
             <div>
-              <h4>開発可能な言語・フレームワーク</h4>
-              <p>得意な技術スタック（Next.js, Python, Go, Flutter など）</p>
+              <h4>得意な言語・フレームワーク</h4>
+              <p>Next.js, Python, Go, Flutter など</p>
             </div>
           </div>
-          <div class="apply-item">
-            <span class="apply-item__num">04</span>
+          <div class="apply__step">
+            <span class="step-num">04</span>
             <div>
-              <h4>これまで作ったプロダクト</h4>
-              <p>GitHub, ポートフォリオ URL または概要説明</p>
+              <h4>これまで作ったもの</h4>
+              <p>GitHub, ポートフォリオ URL または概要</p>
             </div>
           </div>
         </div>
-        <div class="apply__cta-box">
-          <p class="apply__cta-lead">AI 時代の新しい開発スタイルで、<br />スポーツ × テクノロジーのサービスを<br />一緒に作りましょう。</p>
-          <a href="mailto:recruit@example.com" class="btn btn--primary btn--lg">応募する</a>
+        <div class="apply__panel">
+          <p>AIとスポーツで、<br />新しいものを作りましょう。</p>
+          <a href="mailto:recruit@example.com" class="btn btn--primary btn--lg">応募する →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__logo">⚽ SOCCER <span class="accent">× AI</span></div>
-        <p class="footer__copy">© 2025 Soccer AI Platform. All rights reserved.</p>
-      </div>
+      <span class="footer__logo">⚽ SOCCER <span class="accent">× AI</span></span>
+      <span class="footer__copy">© 2025 Soccer AI Platform</span>
     </div>
   </footer>
 
