@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0d2818;
+  --sidebar: #091a10;
+  --card: #0f2d1e;
+  --border: rgba(34,197,94,0.12);
+  --green: #16a34a;
+  --green-bright: #22c55e;
+  --orange: #f97316;
+  --muted: rgba(255,255,255,0.45);
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+}
