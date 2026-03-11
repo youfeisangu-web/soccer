@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOCCER × AI | エンジニア募集</title>
+  <title>Football Performance Exchange | エンジニア募集</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet" />
@@ -14,111 +14,199 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav__logo">
-      <span>⚽</span>
-      <span>SOCCER <span class="accent">× AI</span></span>
+      <div class="nav__icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 2C12 2 8 7 8 12s4 10 4 10M12 2c0 0 4 5 4 10s-4 10-4 10M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 5.5C6.5 7 9 8 12 8s5.5-1 7.5-2.5M4.5 18.5C6.5 17 9 16 12 16s5.5 1 7.5 2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <span>Football Performance <span class="accent-green">Exchange</span></span>
     </div>
-    <a href="#apply" class="btn btn--nav">応募する</a>
+    <a href="#apply" class="btn btn--nav">エンジニア応募</a>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__bg">
-      <div class="hbg-circle hbg-circle--1"></div>
-      <div class="hbg-circle hbg-circle--2"></div>
+    <div class="hero__field-lines">
+      <div class="fl fl--center"></div>
+      <div class="fl fl--circle"></div>
+      <div class="fl fl--penalty-l"></div>
+      <div class="fl fl--penalty-r"></div>
     </div>
+
     <div class="container">
       <div class="hero__inner">
+
+        <!-- LEFT TEXT -->
         <div class="hero__text">
           <p class="hero__kicker">AI × SPORTS PLATFORM</p>
           <h1 class="hero__h1">
-            スポーツを、<br />
-            <em>データとAIで</em><br />
-            もっと面白く。
+            フットボールを、<br />
+            <em>データで動かす</em><br />
+            プラットフォーム。
           </h1>
           <p class="hero__sub">
-            サッカー・フットサル領域のプラットフォームを一緒に作るエンジニアを募集しています。
+            サッカー・フットサル統合管理システムを一緒に作るエンジニアを募集。<br />
+            AI を武器に、スポーツの現場を変えましょう。
           </p>
           <div class="hero__actions">
             <a href="#apply" class="btn btn--primary">応募する</a>
-            <a href="#features" class="btn btn--outline">開発内容を見る</a>
+            <a href="#features" class="btn btn--ghost">開発内容を見る</a>
           </div>
-        </div>
-        <div class="hero__graphic">
-          <div class="graphic__card graphic__card--a">
-            <span class="gc-icon">📊</span>
-            <span class="gc-label">選手スコア分析</span>
-            <div class="gc-bar"><div class="gc-bar__fill" style="width:82%"></div></div>
-            <div class="gc-bar"><div class="gc-bar__fill" style="width:67%"></div></div>
-            <div class="gc-bar"><div class="gc-bar__fill" style="width:91%"></div></div>
-          </div>
-          <div class="graphic__card graphic__card--b">
-            <span class="gc-icon">🏆</span>
-            <span class="gc-label">ランキング</span>
-            <div class="gc-rank"><span class="gc-rank__num">1</span><span>田中 健太</span><span class="gc-score">98pt</span></div>
-            <div class="gc-rank"><span class="gc-rank__num">2</span><span>鈴木 颯</span><span class="gc-score">94pt</span></div>
-            <div class="gc-rank"><span class="gc-rank__num">3</span><span>佐藤 蓮</span><span class="gc-score">91pt</span></div>
-          </div>
-          <div class="graphic__card graphic__card--c">
-            <span class="gc-icon">⚽</span>
-            <span class="gc-label">チーム管理</span>
-            <div class="gc-members">
-              <div class="gc-avatar">T</div>
-              <div class="gc-avatar">S</div>
-              <div class="gc-avatar">K</div>
-              <div class="gc-avatar gc-avatar--more">+8</div>
+          <div class="hero__stats-row">
+            <div class="hstat">
+              <span class="hstat__num">4</span>
+              <span class="hstat__label">コア機能</span>
+            </div>
+            <div class="hstat__div"></div>
+            <div class="hstat">
+              <span class="hstat__num">AI</span>
+              <span class="hstat__label">駆動開発</span>
+            </div>
+            <div class="hstat__div"></div>
+            <div class="hstat">
+              <span class="hstat__num">MVP</span>
+              <span class="hstat__label">スタート</span>
             </div>
           </div>
         </div>
+
+        <!-- RIGHT: MOCK DASHBOARD -->
+        <div class="hero__mock">
+          <div class="mock-window">
+            <div class="mock-window__bar">
+              <span class="mock-dot mock-dot--r"></span>
+              <span class="mock-dot mock-dot--y"></span>
+              <span class="mock-dot mock-dot--g"></span>
+              <span class="mock-title">My Dashboard</span>
+            </div>
+            <div class="mock-body">
+
+              <!-- Player Profile Card -->
+              <div class="mock-card mock-card--profile">
+                <div class="mock-card__header">Player Profile</div>
+                <div class="mock-profile">
+                  <div class="mock-avatar">田</div>
+                  <div class="mock-profile__info">
+                    <strong>T. Tanaka</strong>
+                    <span>Tokyo United</span>
+                  </div>
+                  <div class="mock-rating">
+                    <span class="mock-rating__num">8.2</span>
+                    <span class="mock-rating__label">RATING</span>
+                  </div>
+                </div>
+                <div class="mock-stats-row">
+                  <div class="mock-stat"><span>25</span><small>試合</small></div>
+                  <div class="mock-stat"><span>15</span><small>ゴール</small></div>
+                  <div class="mock-stat"><span>10</span><small>アシスト</small></div>
+                </div>
+                <div class="mock-bars">
+                  <div class="mock-bar-row">
+                    <span>Passing</span>
+                    <div class="mock-bar"><div class="mock-bar__fill" style="--w:86%"></div></div>
+                    <span class="mock-bar__val">8.6</span>
+                  </div>
+                  <div class="mock-bar-row">
+                    <span>Shooting</span>
+                    <div class="mock-bar"><div class="mock-bar__fill" style="--w:60%"></div></div>
+                    <span class="mock-bar__val">6.0</span>
+                  </div>
+                  <div class="mock-bar-row">
+                    <span>Dribbling</span>
+                    <div class="mock-bar"><div class="mock-bar__fill mock-bar__fill--orange" style="--w:70%"></div></div>
+                    <span class="mock-bar__val">7.0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right mini cards -->
+              <div class="mock-side">
+                <div class="mock-card mock-card--rank">
+                  <div class="mock-card__header">ランキング</div>
+                  <div class="mock-rank-item"><span class="rk-num rk-num--1">1</span><span class="rk-name">田中 健太</span><span class="rk-pt">98pt</span></div>
+                  <div class="mock-rank-item"><span class="rk-num rk-num--2">2</span><span class="rk-name">鈴木 颯</span><span class="rk-pt">94pt</span></div>
+                  <div class="mock-rank-item"><span class="rk-num rk-num--3">3</span><span class="rk-name">佐藤 蓮</span><span class="rk-pt">91pt</span></div>
+                </div>
+                <div class="mock-card mock-card--field">
+                  <div class="mock-card__header">チーム管理</div>
+                  <div class="pitch-mini">
+                    <div class="pitch-mini__lines">
+                      <div class="pm-center"></div>
+                    </div>
+                    <div class="pitch-player pm-p1">▲</div>
+                    <div class="pitch-player pm-p2">▲</div>
+                    <div class="pitch-player pm-p3">▲</div>
+                    <div class="pitch-player pm-p4">▲</div>
+                    <div class="pitch-player pm-p5">▲</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- FEATURES -->
-  <section class="section" id="features">
+  <section class="section section--dark" id="features">
     <div class="container">
       <div class="section__head">
-        <p class="section__tag">FEATURES</p>
-        <h2 class="section__title">開発する機能</h2>
+        <p class="section__tag section__tag--green">FEATURES</p>
+        <h2 class="section__title section__title--white">開発する機能</h2>
+        <p class="section__sub section__sub--muted">AI を活用したサッカー・フットサル統合管理プラットフォームの構築</p>
       </div>
       <div class="feat__grid">
         <div class="feat-card">
-          <div class="feat-card__top">
-            <span class="feat-icon">👤</span>
-            <span class="feat-num">01</span>
+          <div class="feat-card__icon-wrap">
+            <span class="feat-card__icon">👤</span>
           </div>
           <h3>個人選手データ管理</h3>
-          <p>選手のプロフィール・パフォーマンス履歴を一元管理。データをベースに成長を可視化します。</p>
+          <p>選手プロフィール・パフォーマンス履歴を一元管理。データをベースに成長を可視化します。</p>
+          <div class="feat-card__foot">
+            <span class="feat-tag">CRUD</span>
+            <span class="feat-tag">データベース</span>
+          </div>
         </div>
         <div class="feat-card">
-          <div class="feat-card__top">
-            <span class="feat-icon">📊</span>
-            <span class="feat-num">02</span>
+          <div class="feat-card__icon-wrap">
+            <span class="feat-card__icon">📊</span>
           </div>
           <h3>個人スコアリング</h3>
-          <p>AI 解析による選手評価スコアの自動算出。強み・課題をひと目で確認できるダッシュボード。</p>
+          <p>AI 解析による評価スコアの自動算出。Passing・Shooting など項目別に可視化するダッシュボード。</p>
+          <div class="feat-card__foot">
+            <span class="feat-tag">AI</span>
+            <span class="feat-tag">分析</span>
+          </div>
         </div>
         <div class="feat-card">
-          <div class="feat-card__top">
-            <span class="feat-icon">🏆</span>
-            <span class="feat-num">03</span>
+          <div class="feat-card__icon-wrap">
+            <span class="feat-card__icon">🏟️</span>
           </div>
           <h3>チーム管理</h3>
-          <p>チーム編成・メンバー管理・スケジュールを一か所で。監督・コーチの業務を効率化します。</p>
+          <p>チーム編成・メンバー管理・スケジュール管理を一か所で。フォーメーション表示機能も。</p>
+          <div class="feat-card__foot">
+            <span class="feat-tag">管理</span>
+            <span class="feat-tag">スケジュール</span>
+          </div>
         </div>
         <div class="feat-card">
-          <div class="feat-card__top">
-            <span class="feat-icon">🥇</span>
-            <span class="feat-num">04</span>
+          <div class="feat-card__icon-wrap">
+            <span class="feat-card__icon">🏆</span>
           </div>
           <h3>ランキングシステム</h3>
-          <p>個人・チーム双方のリアルタイムランキング。実績バッジで選手のモチベーションを高めます。</p>
+          <p>個人・チーム双方のリアルタイムランキング。スコアと実績で選手のモチベーションを高めます。</p>
+          <div class="feat-card__foot">
+            <span class="feat-tag">リアルタイム</span>
+            <span class="feat-tag">実績</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="section section--gray" id="skills">
+  <section class="section" id="skills">
     <div class="container">
       <div class="section__head">
         <p class="section__tag">SKILLS</p>
@@ -126,7 +214,9 @@
       </div>
       <div class="skills__cols">
         <div class="skills__box">
-          <p class="skills__box-label">いずれかの経験</p>
+          <p class="skills__box-label">
+            <span class="label-dot label-dot--green"></span>いずれかの経験
+          </p>
           <ul>
             <li>AI を活用したシステム開発</li>
             <li>Claude Code / ChatGPT / Cursor 等を使った開発</li>
@@ -136,13 +226,17 @@
           </ul>
         </div>
         <div class="skills__box">
-          <p class="skills__box-label">歓迎スキル</p>
+          <p class="skills__box-label">
+            <span class="label-dot label-dot--orange"></span>歓迎スキル
+          </p>
           <ul class="ul--plus">
             <li>AI 駆動開発</li>
             <li>MVP 開発経験</li>
             <li>スポーツ系サービス開発</li>
           </ul>
-          <p class="skills__box-label" style="margin-top:28px;">使用 AI ツール</p>
+          <p class="skills__box-label" style="margin-top:28px;">
+            <span class="label-dot label-dot--purple"></span>使用 AI ツール
+          </p>
           <div class="tool-chips">
             <span>Claude Code</span><span>ChatGPT</span><span>Cursor</span>
             <span>GitHub Copilot</span><span>Gemini</span><span>v0</span>
@@ -153,40 +247,34 @@
   </section>
 
   <!-- CONDITIONS -->
-  <section class="section" id="conditions">
+  <section class="section section--darkgreen" id="conditions">
     <div class="container">
       <div class="section__head">
-        <p class="section__tag">CONDITIONS</p>
-        <h2 class="section__title">応募条件</h2>
+        <p class="section__tag section__tag--green">CONDITIONS</p>
+        <h2 class="section__title section__title--white">応募条件</h2>
       </div>
-      <div class="cond__list">
-        <div class="cond__item">
-          <div class="cond__icon">🤖</div>
-          <div>
-            <h3>AI を中心とした開発スタイル</h3>
-            <p>AI を設計・実装の中心に置いた開発ができる方。ツールを使いこなして高速に動ける方を歓迎します。</p>
-          </div>
+      <div class="cond__grid">
+        <div class="cond-card">
+          <span class="cond-card__icon">🤖</span>
+          <h3>AI 中心の開発スタイル</h3>
+          <p>AI を設計・実装の軸に置いて高速に動けるエンジニア</p>
         </div>
-        <div class="cond__item">
-          <div class="cond__icon">💬</div>
-          <div>
-            <h3>事前ミーティングへの参加</h3>
-            <p>プロジェクト開始前に要件確認のミーティングへ参加いただける方。<br /><small>※参加が難しい方はご遠慮ください</small></p>
-          </div>
+        <div class="cond-card">
+          <span class="cond-card__icon">💬</span>
+          <h3>事前ミーティングへの参加</h3>
+          <p>プロジェクト開始前の要件確認ミーティングに参加できる方<br /><small>※参加できない方はご遠慮ください</small></p>
         </div>
-        <div class="cond__item">
-          <div class="cond__icon">🇯🇵</div>
-          <div>
-            <h3>日本語でのコミュニケーション</h3>
-            <p>日本語でのやりとりが必須です。スポーツ・サッカーへの関心があれば尚可。</p>
-          </div>
+        <div class="cond-card">
+          <span class="cond-card__icon">🇯🇵</span>
+          <h3>日本語でのコミュニケーション</h3>
+          <p>日本語対応必須。スポーツ・サッカーへの関心があれば尚可</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- APPLY -->
-  <section class="section section--gray" id="apply">
+  <section class="section" id="apply">
     <div class="container">
       <div class="section__head">
         <p class="section__tag">APPLY</p>
@@ -224,7 +312,8 @@
           </div>
         </div>
         <div class="apply__panel">
-          <p>AIとスポーツで、<br />新しいものを作りましょう。</p>
+          <div class="apply__panel-icon">⚽</div>
+          <p>フットボールと AI で、<br />新しいものを作りましょう。</p>
           <a href="mailto:recruit@example.com" class="btn btn--primary btn--lg">応募する →</a>
         </div>
       </div>
@@ -234,8 +323,13 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <span class="footer__logo">⚽ SOCCER <span class="accent">× AI</span></span>
-      <span class="footer__copy">© 2025 Soccer AI Platform</span>
+      <div class="footer__logo">
+        <div class="nav__icon nav__icon--sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 2C12 2 8 7 8 12s4 10 4 10M12 2c0 0 4 5 4 10s-4 10-4 10M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 5.5C6.5 7 9 8 12 8s5.5-1 7.5-2.5M4.5 18.5C6.5 17 9 16 12 16s5.5 1 7.5 2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        Football Performance <span class="accent-green">Exchange</span>
+      </div>
+      <span class="footer__copy">© 2025 Football Performance Exchange</span>
     </div>
   </footer>
 
